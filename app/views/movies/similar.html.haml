@@ -1,0 +1,8 @@
+%h2 Movie similar to #{@movie.title}
+
+%h3 Similar movies:
+- if @movies_list
+  %ul
+    - @movies_list.each do |movie|
+      %li 
+        %td= link_to "#{movie.title}", movie_path(movie)
