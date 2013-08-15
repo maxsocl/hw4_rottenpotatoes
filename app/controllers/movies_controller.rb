@@ -67,7 +67,7 @@ class MoviesController < ApplicationController
   def similar
     @movie = Movie.find(params[:id])
     if @movie.director == nil or @movie.director == ""
-      session[:error] = @movie.title
+      @error = @movie.title
       redirect_to movies_path and return
     else
       @movies_list = Movie.find_similar(params[:id])
