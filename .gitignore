@@ -1,0 +1,14 @@
+#*
+\#*\#
+*~
+TAGS
+db/schema.rb
+log/
+db/*.sqlite3
+*.swp
+.bundle
+.rspec
+config/
+lib/
+script/cucumber
+tmp/
